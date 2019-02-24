@@ -19,7 +19,11 @@ var churchillSpeech = {
     },
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech];
 
-var user = window.prompt("What is the capital of UAE?");
+var user = window.prompt("What is your name?");
+	if (user === null){
+		alert("I'll just call you user!")
+	}
+	else alert("Hello " + user + "!");
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
