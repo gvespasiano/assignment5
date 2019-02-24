@@ -19,14 +19,34 @@ var churchillSpeech = {
     },
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech];
 
+//User naming window prompts
 var user = window.prompt("What is your name?");
 	if (user === null){
 		alert("I'll just call you user!")
 	}
 	else alert("Hello " + user + "!");
+	if (user === null){
+		var user = "User"
+	};
 
+//Donate button - favorite speech author and their age
 document.getElementById('BtnDonate').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Donate" button.
+ 	var favorite = window.prompt("Who is your favorite author, "+user+"?");
+	switch(favorite) {	
+		case "Churchill" :
+			alert(churchillSpeech.author + " was " + churchillSpeech.authorAge + " during this speech." );
+		break;
+		
+		case "Ghandi" :
+			alert(ghandiSpeech.author + " was " + ghandiSpeech.authorAge + " during this speech.");
+		break;
+		case "Demosthenes" :
+			alert(demosthenesSpeech.author + " was " + demosthenesSpeech.authorAge + " during this speech." );
+		break;
+		default :
+			alert("Please enter a valid author from our speeches. (Churchill, Ghandi or Demosthenes)");
+		break;
+	}
 });
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
