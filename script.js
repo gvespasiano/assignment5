@@ -48,15 +48,15 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 		break;
 	}
 });
-
+//Churchill Information
 document.getElementById('BtnChurchill').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Churchill" button.
+	alert("This speech was written by " + churchillSpeech.author + " in " + churchillSpeech.year);
 });
-
+//Ghandi Information
 document.getElementById('BtnGhandi').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Ghandi" button.
+  alert("This speech was written by " + ghandiSpeech.author + " in " + ghandiSpeech.year);
 });
-
+//Demosthenes Information
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Demosthenes" button.
+  alert("This speech was written by " + demosthenesSpeech.author + " in " + demosthenesSpeech.year);
 });
