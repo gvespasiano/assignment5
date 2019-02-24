@@ -56,6 +56,13 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
     } else {
         alert("This speech took place during the common era.");
     }
+	if (churchillSpeech.year < ghandiSpeech.year && churchillSpeech.year < demosthenesSpeech.year){
+		alert("This is the oldest speech on the page!")
+	}
+	if (churchillSpeech.year > ghandiSpeech.year && churchillSpeech.year > demosthenesSpeech.year){
+		alert("This is the most recent speech on the page!")
+	}
+	
 });
 //Ghandi Information
 document.getElementById('BtnGhandi').addEventListener('click', function(){
@@ -64,6 +71,12 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
       alert("This speech took place before the common era.");
   } else {
       alert("This speech took place during the common era.");
+  }
+	if (ghandiSpeech.year < churchillSpeech.year && ghandiSpeech.year < demosthenesSpeech.year){
+	alert("This is the oldest speech on the page!")
+  }
+	if (ghandiSpeech.year > churchillSpeech.year && ghandiSpeech.year > demosthenesSpeech.year){
+	alert("This is the most recent speech on the page!")
   }
 });
 //Demosthenes Information
@@ -74,4 +87,10 @@ document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   } else {
       alert("This speech took place during the common era.");
   }
+if (demosthenesSpeech.year < churchillSpeech.year && demosthenesSpeech.year < ghandiSpeech.year){
+alert("This is the oldest speech on the page!")
+}
+if (demosthenesSpeech.year > churchillSpeech.year && demosthenesSpeech.year > ghandiSpeech.year){
+alert("This is the most recent speech on the page!")
+}
 });
