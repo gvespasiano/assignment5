@@ -51,12 +51,27 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 //Churchill Information
 document.getElementById('BtnChurchill').addEventListener('click', function(){
 	alert("This speech was written by " + churchillSpeech.author + " in " + churchillSpeech.year);
+    if (churchillSpeech.yearIsBCE) {
+        alert("This speech took place before the common era.");
+    } else {
+        alert("This speech took place during the common era.");
+    }
 });
 //Ghandi Information
 document.getElementById('BtnGhandi').addEventListener('click', function(){
   alert("This speech was written by " + ghandiSpeech.author + " in " + ghandiSpeech.year);
+  if (ghandiSpeech.yearIsBCE) {
+      alert("This speech took place before the common era.");
+  } else {
+      alert("This speech took place during the common era.");
+  }
 });
 //Demosthenes Information
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   alert("This speech was written by " + demosthenesSpeech.author + " in " + demosthenesSpeech.year);
+  if (demosthenesSpeech.yearIsBCE) {
+      alert("This speech took place before the common era.");
+  } else {
+      alert("This speech took place during the common era.");
+  }
 });
